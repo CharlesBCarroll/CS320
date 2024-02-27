@@ -49,7 +49,7 @@ public class MultiplyNumbersServlet extends HttpServlet {
                 NumbersController controller = new NumbersController();
 
                 // Call the controller method to perform the operation and set the result in the model
-                numbers.setResult(controller.multiply(numbers.getFirst(), numbers.getSecond()));
+                controller.multiply(numbers);
             }
         } catch (NumberFormatException e) {
             errorMessage = "Invalid double";

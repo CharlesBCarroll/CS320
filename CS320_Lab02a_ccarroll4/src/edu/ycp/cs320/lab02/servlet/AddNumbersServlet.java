@@ -51,7 +51,7 @@ public class AddNumbersServlet extends HttpServlet {
                 NumbersController controller = new NumbersController();
 
                 // Call the controller method to perform the operation and set the result in the model
-                numbers.setResult(controller.add(numbers.getFirst(), numbers.getSecond(), numbers.getThird()));
+                controller.add(numbers);
             }
         } catch (NumberFormatException e) {
             errorMessage = "Invalid double";
