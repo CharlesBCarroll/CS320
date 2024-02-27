@@ -1,0 +1,109 @@
+/* Styles for Resume */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px;
+    padding: 0;
+    color: darkblue;
+    position: relative;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.resume {
+    flex: 1; 
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-variant: small-caps;
+    font-size: 2vw;
+    line-height: 0;
+    color: darkblue;
+    font-weight: 400;
+    width: 100%; 
+}
+
+.header h1 {
+    line-height: 0;
+}
+
+.header-line {
+    background-color: darkblue;
+    height: 2px;
+    margin: 0;
+}
+
+.sidebar {
+    width: 275px;
+    height: 190px; 
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1.5px solid darkblue;
+    border-radius: 0px;
+    margin-left: auto; 
+    margin-top: 10px; 
+    margin-right: 35px;
+    font-size: 16px; 
+    color: darkblue; 
+}
+
+.sidebar p {
+    color: black;
+    margin-bottom: 0px; 
+    line-height: .3;
+    word-wrap: break-word;
+}
+
+.section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-name {
+    font-weight: normal;
+    font-size: 18px;
+    color: darkblue;
+}
+
+.resume p {
+    color: black;
+    margin-bottom: 10px; 
+    line-height: 1.3x;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.resume li {
+    color: black;
+}
+
+.resume hr {
+    height: 1.5px;
+    margin: 0;
+    border: none;
+    background-color: darkblue;
+    width: 97%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        margin-left: 0; 
+        width: 100%; 
+        order: 2; 
+    }
+}
+
+.sidebar hr {
+    height: 1.5px;
+    margin: 0;
+    border: none;
+    background-color: darkblue; 
+}
